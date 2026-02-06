@@ -1,0 +1,876 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>2026 PLANNING &#8212; FLL</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=87e54e7c" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '2026/readme';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="dates" href="dates.html" />
+    <link rel="prev" title="FLL" href="../readme.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../readme.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">FLL</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../readme.html">
+                    FLL
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">2026 UNEARTHED</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">2026 PLANNING</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dates.html">dates</a></li>
+<li class="toctree-l1"><a class="reference internal" href="intro.html">intro</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pr.html">pr</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2025 Explores</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../2025A/readme.html">2025A</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2024 Deep Dive</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../2024/readme.html">General</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2024/program.html">planning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2024/research.html">research</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2024B/readme.html">2024B</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2023 masterpiece</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../2023/masterpiece/readme.html">planning</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Training</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../101_basic_icons/readme.html">101 BasicBlocks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../102_basic_words/readme.html">102 basicWords</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../103_words_concepts/readme.html">103 WordsConcepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../105_introBuilds/readme.html">105 BasicBuild</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../200_subs/readme.html">200 SubParts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../201_transmissions/readme.html">201 Transmissions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../202_driving/readme.html">202 Driving</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../301_primeUnits/readme.html">301 SpikeLessons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../302_primeExpansion/readme.html">302 Prime Expansion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../400_animalMimic/readme.html">400 AnimalMimic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../500_campaign/readme.html">500 Campaigns</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../501_transformers/readme.html">501 Transformers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../502_advanced/readme.html">502 Advanced</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../600_reverseEng/readme.html">600 Reverse</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../700_moc/readme.html">700 MocKits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../800_buildForFun/readme.html">800 FunBuilds</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../801_battle/readme.html">801 battles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../900_untiIntuitive/readme.html">900 UNintuitive</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/SOLEROM/fll" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/SOLEROM/fll/issues/new?title=Issue%20on%20page%20%2F2026/readme.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/2026/readme.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>2026 PLANNING</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#year-topic">year topic</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matrials">matrials</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#links">links</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#les0">les0: מבוא לפני ערכות</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#les1">les1 : הרפתקה ארכיאולוגית</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#les2">les2:  התהליך הארכיאולוגי</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#les3">les3:  הצלת שריד</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#les4-rotate-and-locate">les4: - rotate and locate</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#les5-sort-by-sensors">les5 : sort by sensors</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#les6-site-vechiles">les6 : site vechiles</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#basic">🔨 basic</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#advanced">🔨🔨 advanced: דגם חפירות</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#les7-tools-for-archeologists">les7 : tools for archeologists</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#les8-radar">les8 : radar</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#les9-professions">les9: professions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#concepts-builds">concepts builds</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#build">🔨 build: תכנות דגם אתר החפירות</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#les10-preapre-for-event">les10 : preapre for event</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="planning">
+<h1>2026 PLANNING<a class="headerlink" href="#planning" title="Link to this heading">#</a></h1>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">חקרו</span> <span class="n">את</span> <span class="n">העבר</span> <span class="n">כדי</span> <span class="n">לגלות</span> <span class="n">את</span> <span class="n">העתיד</span><span class="o">.</span>
+</pre></div>
+</div>
+<p><img alt="alt text" src="../_images/image43.png" /></p>
+<ul class="simple">
+<li><p><a class="reference internal" href="dates.html"><span class="std std-doc">date planning</span></a></p></li>
+</ul>
+<section id="year-topic">
+<h2>year topic<a class="headerlink" href="#year-topic" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="arch/readme.html"><span class="std std-doc">archaeology</span></a></p></li>
+</ul>
+</section>
+<section id="matrials">
+<h2>matrials<a class="headerlink" href="#matrials" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="intro.html"><span class="std std-doc">intro</span></a></p></li>
+<li><p><a class="reference internal" href="pr.html"><span class="std std-doc">pr</span></a></p></li>
+<li><p><a class="reference internal" href="official.html"><span class="std std-doc">official materials</span></a></p></li>
+</ul>
+</section>
+<section id="links">
+<h2>links<a class="headerlink" href="#links" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=eET9BNpTmWk">The Magic School Bus</a></p></li>
+<li><p><a class="reference external" href="https://www.merriam-webster.com/vocabulary/archaeology-vocabulary-list">Vocabulary List</a></p></li>
+<li><p><a class="reference external" href="https://www.nps.gov/subjects/archeology/archeology-for-kids.htm">Archeology for Kids</a></p></li>
+<li><p><a class="reference external" href="https://online.kidsdiscover.com/unit/archaeology">Archeology for Kids2</a></p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=bgqea0E2eAY">Layers Of Soil</a></p></li>
+<li><p><a class="reference external" href="https://kids.kiddle.co/Excavator">Excavator</a></p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=ppKyRyYvicg">Learn Radar for Kids</a></p></li>
+</ul>
+</section>
+<section id="les0">
+<h2>les0: מבוא לפני ערכות<a class="headerlink" href="#les0" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>year movie  + year subject clips ( <a class="reference external" href="https://drive.google.com/drive/folders/1qVdUUQ-fwUfZVXGGUhkv1OUQr7aQLtkK?usp=drive_link">les01 drive</a> )</p></li>
+<li><p><a class="reference internal" href="../101_basic_icons/readme.html"><span class="std std-doc">intro to blocks</span></a></p></li>
+<li><p>intro builds:</p>
+<ul>
+<li><p><a class="reference internal" href="../301_primeUnits/01_hopper/readme.html"><span class="std std-doc">lev1: hopper</span></a></p></li>
+<li><p><a class="reference internal" href="../301_primeUnits/11_rescue_objects/readme.html"><span class="std std-doc">lev2: graber</span></a></p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="les1">
+<h2>les1 : הרפתקה ארכיאולוגית<a class="headerlink" href="#les1" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>choose name to the team</p></li>
+<li><p>start with the comics</p></li>
+<li><p>what is archaeology?</p></li>
+</ul>
+<p><img alt="" src="../_images/image-74.png" /></p>
+<ul class="simple">
+<li><p>UNEARTHED חקר הנושא</p></li>
+</ul>
+<div dir="rtl" lang="he">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>למידה על איך בני האדם חיו בעבר עשויה לעזור לנו לקבל החלטות טובות יותר בעתיד.
+ארכיאולוגים עשויים לרצות לדעת:
+      מי חיו שם?
+      באילו כלים הם השתמשו?
+      מה הם אכלו?
+      איזה סוגי בתים הם בנו?
+      באילו משחקים הם שיחקו?
+
+</pre></div>
+</div>
+</div>
+<ul class="simple">
+<li><p>🔨 lego 7-12 :  פעילות בנייה חופשית בנושא ארכיאולוגיה</p></li>
+</ul>
+<p><img alt="" src="../_images/image-84.png" /></p>
+</section>
+<section id="les2">
+<h2>les2:  התהליך הארכיאולוגי<a class="headerlink" href="#les2" title="Link to this heading">#</a></h2>
+<p><img alt="" src="../_images/image-94.png" /></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>כיצד ארכיאולוגים יודעים היכן לחפור?
+מהם חלק מהכלים בהם משתמשים ארכיאולוגים?
+כיצד מכ”ם יכול לעזור לארכיאולוגים למצוא חפצים?
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>🔨 <a class="reference internal" href="official.html#model1"><span class="std std-ref">build radar</span></a>  model from kit 1 (kit only no electronics)</p></li>
+<li><p>🔨🔨 build some <a class="reference internal" href="digging.html"><span class="std std-doc">digging ideas</span></a></p></li>
+</ul>
+</section>
+<section id="les3">
+<h2>les3:  הצלת שריד<a class="headerlink" href="#les3" title="Link to this heading">#</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span> אילו כלים אחרים משמשים ארכיאולוגים. 
+ אילו כלים נדרשים כדי לחפור? 
+ באילו כלים משתמשים לתיעוד או לחקר חפצים?
+
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>🔨 build kit (kit only no electronics) 2+5 :</p></li>
+</ul>
+<p><img alt="alt text" src="../_images/image-102.png" /></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>דברו עם קבוצתכם על החפצים שבתוך דגם
+החפירה. איך לדעתכם השתמשו בחפצים אלו?
+התאמנו בהסרת שכבות ובחפירת הדגם. האם
+תוכלו להרכיב אותו בחזרה?
+בחנו את החדרים השונים בתוך הדגם ודונו עם
+קבוצתכם כיצד השתמשו בהם.
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>🔨<a class="reference internal" href="../301_primeUnits/03_cleanUp/readme.html"><span class="std std-doc">simple arms</span></a></p></li>
+<li><p>🔨🔨 <a class="reference internal" href="../200_subs/arms/readme.html"><span class="std std-doc">complicate arms</span></a></p></li>
+</ul>
+</section>
+<section id="les4-rotate-and-locate">
+<h2>les4: - rotate and locate<a class="headerlink" href="#les4-rotate-and-locate" title="Link to this heading">#</a></h2>
+<p>הקבוצה תלמד כיצד ארכיאולוגים
+משתמשים בטכנולוגיה באתר חפירות</p>
+<ul class="simple">
+<li><p>🔨 basic: <a class="reference external" href="https://education.lego.com/en-us/lessons/spikeessential-amazing-amusement-park/spikeessential-classic-carousel/">Classic Carousel</a> (+change spin direction)</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>דברו עם חברי הקבוצה על איך שהדגם יכול לסייע
+לארכיאולוגים. אילו שינויים הייתם עושים?
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>rebuild model to help on site :  סוקרי אתרים</p>
+<ul>
+<li><p>in no other ideas :</p>
+<ul>
+<li><p>בחרו חפץ שנמצא על שטיח המשחק שמעניין
+אתכם.</p></li>
+<li><p>שנו את התוכנית כך שהדגם יסתובב ויעצור מעל
+החפץ שבחרתם.</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>🔨🔨 advanced:  <a class="reference internal" href="../202_driving/4_parking/readme.html"><span class="std std-doc">drive control seperate engines</span></a></p></li>
+</ul>
+</section>
+<section id="les5-sort-by-sensors">
+<h2>les5 : sort by sensors<a class="headerlink" href="#les5-sort-by-sensors" title="Link to this heading">#</a></h2>
+<p>הקבוצה תלמד כיצד ניתן להשתמש
+בחיישנים כדי לזהות דברים
+שארכיאולוגים לא יכולים לראות
+באתר חפירות.</p>
+<ul class="simple">
+<li><p>חקר כיצד ארכיאולוגים משתמשים בטכנולוגיה</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ארכיאולוגים</span> <span class="n">משתמשים</span> <span class="n">בחיישנים</span> <span class="n">כדי</span> <span class="n">ללמוד</span> <span class="n">על</span> <span class="n">חפצים</span> <span class="n">מבלי</span> <span class="n">לפגוע</span> <span class="n">בהם</span><span class="o">.</span>
+<span class="n">חיישנים</span> <span class="n">מסוימים</span> <span class="n">יכולים</span> <span class="n">לזהות</span> <span class="n">אילו</span> <span class="n">חומרים</span> <span class="n">נמצאים</span> <span class="n">בחפץ</span><span class="p">,</span> <span class="n">או</span> <span class="n">אם</span> <span class="n">משהו</span> <span class="n">מוסתר</span> <span class="n">בתוכו</span><span class="o">.</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>🔨 basic: <a class="reference external" href="https://education.lego.com/en-us/lessons/spikeessential-great-adventures/spikeessential-animal-alarm/">Animal Alarm</a></p>
+<ul>
+<li><p>for spike work on voice alarm on color sensor</p></li>
+<li><p>change the model to help on site : sort by color the found objects “בלשי עפר”</p></li>
+</ul>
+</li>
+<li><p>🔨🔨 advanced:</p>
+<ul>
+<li><p>???TODO??? :  <a class="reference internal" href="../101_basic_icons/sensorsTests/distanceTest.html"><span class="std std-doc">distance sensor</span></a></p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="les6-site-vechiles">
+<h2>les6 : site vechiles<a class="headerlink" href="#les6-site-vechiles" title="Link to this heading">#</a></h2>
+<p>הקבוצה תלמד כיצד ארכיאולוגים
+מטפלים בחפצים ומזיזים אותם באתר
+חפירות.</p>
+<p>חקר כלי רכב המשמשים באתרי חפירות</p>
+<section id="basic">
+<h3>🔨 basic<a class="headerlink" href="#basic" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://education.lego.com/en-us/lessons/spikeessential-great-adventures/spikeessential-arctic-ride/">Arctic Ride</a></p>
+<ul>
+<li><p>change to go backward</p></li>
+<li><p>update the model to used on site</p></li>
+<li><p>try : שהדגם ינוע בין שני החפצים שבחרתם. נסו לעצור את הדגם על אחד החפצים.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="advanced">
+<h3>🔨🔨 advanced: דגם חפירות<a class="headerlink" href="#advanced" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>build site vehicle</p></li>
+</ul>
+<p>Archaeological site vehicles are broadly divided into two categories:</p>
+<ul class="simple">
+<li><p>those used for fieldwork (like sturdy 4x4 vehicles and specialized minivans)</p></li>
+<li><p>robotic systems for surveying and excavation,</p>
+<ul>
+<li><p>Unmanned Aerial Vehicles (UAVs)</p></li>
+<li><p>Remotely Operated Vehicles (ROVs)</p></li>
+</ul>
+</li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+האם תוכלו לשנות את הרובוט כך שיסע עם ארבעה גלגלים?
+האם תוכלו לבנות משאית שתעביר חומר רב מאתר החפירות?
+כיצד תוכלו לתכנת את הרובוט שלכם כך שיעצור על אחד מהחפצים?
+
+
+על הקבוצה לתרגל את מיקום הרובוט כך שיגיע למיקום מסוים על שטיח המשחק.
+אתם יכולים להציב מכשול על שטיח המשחק כדי לאתגר את הקבוצה לתכנת את הרובוט שלה להסתובב.
+</pre></div>
+</div>
+<hr class="docutils" />
+<p>אתגר1 בין קבוצתי: העברת משקל רב ביותר</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="les7-tools-for-archeologists">
+<h2>les7 : tools for archeologists<a class="headerlink" href="#les7-tools-for-archeologists" title="Link to this heading">#</a></h2>
+<p>הקבוצה תבנה כלים בהם משתמשים ארכיאולוגים באתרי חפירות</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>אילו כלים נדרשים לחפירה? אילו כלים נדרשים לתיעוד או לחקר חפצים?
+</pre></div>
+</div>
+<p>🔨 build : להמציא כלי חדש בלגו חופשי</p>
+<ul class="simple">
+<li><p>talk about the concept of radar for next lesson</p></li>
+</ul>
+</section>
+<section id="les8-radar">
+<h2>les8 : radar<a class="headerlink" href="#les8-radar" title="Link to this heading">#</a></h2>
+<p>מהו מכ”מ</p>
+<p>🔨 basic build activity מחפשי אותות</p>
+<p><img alt="alt text" src="../_images/image-220.png" /></p>
+<p>???TODO??? : spike updated instructions</p>
+<p>🔨🔨 advanced</p>
+<ul class="simple">
+<li><p>build the basic model</p></li>
+<li><p>combine distance sensor and color sensor to find objects on the field</p></li>
+</ul>
+<hr class="docutils" />
+<p>אתגר2 בין קבוצתי: חיaפוש אובייקט ידוע במתאר לא ידוע ללא מפה</p>
+</section>
+<hr class="docutils" />
+<section id="les9-professions">
+<h2>les9: professions<a class="headerlink" href="#les9-professions" title="Link to this heading">#</a></h2>
+<p>הקבוצה תלמד על מקצועות הקשורים לארכיאולוגיה</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="professions.html"><span class="std std-doc">list of professions</span></a></p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>לאילו מקומות נשלחים חפצים כדי שאנשים יוכלו ללמוד אותם?
+אילו מקצועות תומכים בעבודתם של ארכיאולוגים?
+
+בחרו במקצוע המעניין אתכם. איזה סוג של הכשרה נדרשת כדי לעסוק בו? 
+באילו כלים משתמשים במקצוע זה?
+
+</pre></div>
+</div>
+<section id="concepts-builds">
+<h3>concepts builds<a class="headerlink" href="#concepts-builds" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><a class="reference internal" href="colSenDemo.html"><span class="std std-doc">color sensor area</span></a></p></li>
+</ul>
+</section>
+<section id="build">
+<h3>🔨 build: תכנות דגם אתר החפירות<a class="headerlink" href="#build" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>add electronics to the model from kit 2+5:</p></li>
+</ul>
+<p><img alt="alt text" src="../_images/image-410.png" /><br />
+??? TODO ??? spike updated instructions</p>
+<ul class="simple">
+<li><p>run the sw</p>
+<ul>
+<li><p>control speed</p></li>
+<li><p>refactor the moving part mechanism in other ways</p></li>
+<li><p>add custom group symbols representing the team</p></li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
+<section id="les10-preapre-for-event">
+<h2>les10 : preapre for event<a class="headerlink" href="#les10-preapre-for-event" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>do הדגם הקבוצתי</p></li>
+<li><p>do הפוסטר הקבוצתי</p></li>
+<li><p>do הכנה לאירוע</p></li>
+</ul>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./2026"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../readme.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">FLL</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="dates.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">dates</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#year-topic">year topic</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matrials">matrials</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#links">links</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#les0">les0: מבוא לפני ערכות</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#les1">les1 : הרפתקה ארכיאולוגית</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#les2">les2:  התהליך הארכיאולוגי</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#les3">les3:  הצלת שריד</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#les4-rotate-and-locate">les4: - rotate and locate</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#les5-sort-by-sensors">les5 : sort by sensors</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#les6-site-vechiles">les6 : site vechiles</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#basic">🔨 basic</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#advanced">🔨🔨 advanced: דגם חפירות</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#les7-tools-for-archeologists">les7 : tools for archeologists</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#les8-radar">les8 : radar</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#les9-professions">les9: professions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#concepts-builds">concepts builds</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#build">🔨 build: תכנות דגם אתר החפירות</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#les10-preapre-for-event">les10 : preapre for event</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By 0xsol
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
