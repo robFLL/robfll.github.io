@@ -3,27 +3,14 @@ root: readme.md
 parts:
   #########################################################################################################
 
-  - caption: 2026 UNEARTHED
-    chapters:
-      - file: 2026/readme.md
-      - file: 2026/dates.md
-      - file: 2026/intro.md
-      - file: 2026/pr.md
-
-  - caption: 2025 Explores
-    chapters:
-      - file: 2025A/readme.md
-
-  - caption: 2024 Deep Dive
-    chapters:
-      - file: 2024/readme.md
-      - file: 2024/program.md
-      - file: 2024/research.md
-      - file: 2024B/readme.md
-
-  - caption: 2023 masterpiece
+  - caption: Explore Seasons
     chapters:
       - file: 2023/masterpiece/readme.md
+      - file: 2024/readme.md
+      - file: 2024B/readme.md
+      - file: 2025A/readme.md
+      - file: 2026/readme.md
+      - file: 2026B/readme.md
 
   - caption: Training
     chapters:

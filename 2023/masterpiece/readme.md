@@ -1,4 +1,4 @@
-# planning
+# 2023A
 
 ## intro
 * [MASTERPIECE Explore Set](https://www.youtube.com/watch?v=wLv0cYZ58fw)
