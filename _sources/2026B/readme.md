@@ -1,5 +1,7 @@
 # 2026B
 
+* [שַׁאֲגַת הָאֲרִי](./aria/readme.md)
+
 ## out of scope // just for fun
 *  [hopper](../301_primeUnits/01_hopper/readme.md)
 * [Dancer](../301_primeUnits/08_breakDancer/readme.md)
