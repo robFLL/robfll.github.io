@@ -5,12 +5,13 @@ parts:
 
   - caption: Explore Seasons
     chapters:
-      - file: 2023/masterpiece/readme.md
-      - file: 2024/readme.md
-      - file: 2024B/readme.md
-      - file: 2025A/readme.md
+      - file: 2027/challenge/readme.md
       - file: 2026/readme.md
       - file: 2026B/readme.md
+      - file: 2024B/readme.md
+      - file: 2025A/readme.md
+      - file: 2024/readme.md
+      - file: 2023/masterpiece/readme.md
 
   - caption: Training
     chapters:
