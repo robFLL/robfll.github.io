@@ -3,7 +3,7 @@ root: readme.md
 parts:
   #########################################################################################################
 
-  - caption: Explore Seasons
+  - caption: Seasons
     chapters:
       - file: 2027/challenge/readme.md
       - file: 2026/readme.md
