@@ -8,6 +8,7 @@
 ## vids
 
 * [ סידור הזירה | BIOGLOW 2026-27 ](https://www.youtube.com/watch?v=BYrrR3-Qcdk)
+* [models](./models.md)
 * [משימות משחק הרובוט ](https://www.youtube.com/watch?v=2J_yiy8yjHw)
 
 ## תכנון
