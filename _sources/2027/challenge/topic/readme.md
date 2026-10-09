@@ -7,7 +7,9 @@
 
 
 ## prep
-* [bioglow-examples](./prep/bioglow-examples.html)
+* [bioglow-examples downlaod](./prep/bioglow-examples.html)  | [ => open online](https://robfll.github.io/2027/challenge/topic/prep/bioglow-examples.html)
+* [bioglow-rainforest and methods](./prep/bioglow-rainforest-he.html) | [=> open online](https://robfll.github.io/2027/challenge/topic/prep/bioglow-rainforest-he.html)
+
 
 ## resources
 
