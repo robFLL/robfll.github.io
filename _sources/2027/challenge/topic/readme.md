@@ -5,6 +5,10 @@
 
 * [examples](./examples.md)
 
+
+## prep
+* [bioglow-examples](./prep/bioglow-examples.html)
+
 ## resources
 
 https://firstinspires.blob.core.windows.net/fll/challenge/2026-27/fll-challenge-bioglow-multimedia-resources.pdf
