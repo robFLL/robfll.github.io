@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>הפינגוינים 2027</title>
+<meta name="description" content="דף הבית של קבוצת הפינגוינים - פירסט לגו ליג צ׳אלנג׳ 2027 - הרצוג כיתה ד">
+<meta name="theme-color" content="#0b3d6b">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="הפינגוינים">
+<meta name="mobile-web-app-capable" content="yes">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐧</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ice-1: #e8f6ff;
+    --ice-2: #cdeaff;
+    --sea: #0b3d6b;
+    --sea-2: #145a99;
+    --beak: #ffb020;
+    --belly: #ffffff;
+    --ink: #10243a;
+    --muted: #4d6680;
+    --card: #ffffff;
+    --shadow: 0 6px 18px rgba(11, 61, 107, .14);
+    /* section accent colors */
+    --robot: #ff7a1a;
+    --project: #19a974;
+    --core: #8a4fff;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body {
+    font-family: "Rubik", "Segoe UI", Arial, sans-serif;
+    color: var(--ink);
+    background: linear-gradient(180deg, var(--ice-2) 0%, var(--ice-1) 40%, #f7fcff 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  /* ---------- Header ---------- */
+  header {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(160deg, var(--sea) 0%, var(--sea-2) 100%);
+    color: #fff;
+    padding: 28px 16px 70px;
+    text-align: center;
+  }
+  header::after { /* ice floe edge */
+    content: "";
+    position: absolute; left: 0; right: 0; bottom: -1px; height: 48px;
+    background: var(--ice-2);
+    clip-path: polygon(0 60%, 8% 35%, 18% 55%, 30% 25%, 42% 50%, 55% 30%, 66% 55%, 78% 28%, 90% 52%, 100% 35%, 100% 100%, 0 100%);
+  }
+  .flakes span {
+    position: absolute; top: -20px; color: rgba(255,255,255,.7);
+    animation: fall linear infinite; font-size: 14px; pointer-events: none;
+  }
+  @keyframes fall { to { transform: translateY(260px) rotate(180deg); opacity: 0; } }
+
+  .hero { position: relative; z-index: 1; max-width: 900px; margin: 0 auto; }
+  .mascot { width: 130px; height: 130px; display: block; margin: 0 auto 8px; animation: bob 3s ease-in-out infinite; }
+  @keyframes bob { 50% { transform: translateY(-6px) rotate(-2deg); } }
+  h1 { margin: 0; font-size: clamp(1.9rem, 7vw, 3rem); font-weight: 800; letter-spacing: .5px; }
+  .subtitle { margin: 4px 0 0; font-size: clamp(1rem, 3.8vw, 1.25rem); opacity: .92; }
+  .badge-row { margin-top: 12px; display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; }
+  .pill {
+    background: rgba(255,255,255,.16); border: 1px solid rgba(255,255,255,.35);
+    padding: 4px 12px; border-radius: 999px; font-size: .9rem;
+  }
+
+  /* ---------- Quick jump ---------- */
+  nav.jump {
+    position: sticky; top: 0; z-index: 5;
+    display: flex; gap: 8px; justify-content: center; flex-wrap: wrap;
+    padding: 10px 16px;
+    background: rgba(232, 246, 255, .92);
+    backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px);
+    border-bottom: 1px solid rgba(11,61,107,.08);
+  }
+  nav.jump a {
+    text-decoration: none; color: #fff; font-weight: 600;
+    padding: 8px 14px; border-radius: 999px; font-size: .95rem;
+    box-shadow: var(--shadow);
+  }
+
+  /* ---------- Sections ---------- */
+  main { max-width: 1000px; margin: 0 auto; padding: 18px 16px 40px; }
+  section { margin: 22px 0 30px; scroll-margin-top: 70px; }
+  .section-head { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; }
+  .section-icon {
+    width: 52px; height: 52px; flex: none; border-radius: 16px;
+    display: grid; place-items: center; font-size: 28px; color: #fff;
+    box-shadow: var(--shadow);
+  }
+  h2 { margin: 0; font-size: clamp(1.35rem, 5vw, 1.8rem); }
+  .section-desc { margin: 0; color: var(--muted); font-size: .95rem; }
+
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 14px; }
+  @media (max-width: 520px) { .grid { grid-template-columns: 1fr; gap: 10px; } }
+
+  a.card {
+    display: flex; align-items: center; gap: 12px;
+    background: var(--card); color: var(--ink); text-decoration: none;
+    border-radius: 18px; padding: 14px 16px; min-height: 76px;
+    box-shadow: var(--shadow);
+    border-inline-start: 6px solid var(--accent);
+    transition: transform .15s ease, box-shadow .15s ease;
+  }
+  a.card:hover, a.card:focus-visible { transform: translateY(-3px) scale(1.01); box-shadow: 0 10px 24px rgba(11,61,107,.22); }
+  a.card:active { transform: scale(.98); }
+  a.card:focus-visible { outline: 3px solid var(--beak); outline-offset: 2px; }
+  .card-emoji { font-size: 30px; flex: none; width: 44px; text-align: center; }
+  .card-text { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+  .card-title { font-weight: 600; font-size: 1.08rem; }
+  .tag {
+    align-self: flex-start; font-size: .75rem; font-weight: 600;
+    padding: 2px 9px; border-radius: 999px;
+    background: color-mix(in srgb, var(--accent) 14%, white); color: var(--accent);
+  }
+
+  /* ---------- Footer ---------- */
+  footer { text-align: center; color: var(--muted); font-size: .9rem; padding: 10px 16px 30px; }
+  footer .walk { font-size: 26px; letter-spacing: 6px; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .mascot, .flakes span { animation: none; }
+    .flakes { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="flakes" aria-hidden="true"></div>
+  <div class="hero">
+    <!-- Robot penguin mascot -->
+    <svg class="mascot" viewBox="0 0 200 200" aria-hidden="true">
+      <!-- antenna -->
+      <line x1="100" y1="22" x2="100" y2="42" stroke="#9fb3c8" stroke-width="5" stroke-linecap="round"/>
+      <circle cx="100" cy="18" r="8" fill="#ff4d4d"/>
+      <!-- body -->
+      <ellipse cx="100" cy="115" rx="62" ry="72" fill="#1c2b3a"/>
+      <ellipse cx="100" cy="128" rx="42" ry="54" fill="#fff"/>
+      <!-- robot visor -->
+      <rect x="58" y="62" width="84" height="38" rx="18" fill="#9fe3ff" stroke="#5fb8e6" stroke-width="4"/>
+      <circle cx="82" cy="81" r="9" fill="#10243a"/><circle cx="85" cy="78" r="3" fill="#fff"/>
+      <circle cx="118" cy="81" r="9" fill="#10243a"/><circle cx="121" cy="78" r="3" fill="#fff"/>
+      <!-- beak -->
+      <polygon points="88,104 112,104 100,120" fill="#ffb020"/>
+      <!-- bolts / chest panel -->
+      <rect x="80" y="135" width="40" height="26" rx="6" fill="#e6f2fb" stroke="#9fb3c8" stroke-width="3"/>
+      <circle cx="90" cy="148" r="4" fill="#19a974"/><circle cx="100" cy="148" r="4" fill="#ffb020"/><circle cx="110" cy="148" r="4" fill="#ff4d4d"/>
+      <!-- flippers -->
+      <path d="M40 110 Q18 140 34 168 Q46 150 48 128 Z" fill="#1c2b3a"/>
+      <path d="M160 110 Q182 140 166 168 Q154 150 152 128 Z" fill="#1c2b3a"/>
+      <!-- feet -->
+      <ellipse cx="78" cy="186" rx="18" ry="8" fill="#ffb020"/>
+      <ellipse cx="122" cy="186" rx="18" ry="8" fill="#ffb020"/>
+    </svg>
+    <h1>קבוצת הפינגוינים 🐧🤖</h1>
+    <p class="subtitle">פירסט לגו ליג צ׳אלנג׳ 2027 · הרצוג · כיתה ד</p>
+    <div class="badge-row">
+      <span class="pill">🧱 בונים</span>
+      <span class="pill">💻 מתכנתים</span>
+      <span class="pill">🔬 חוקרים</span>
+      <span class="pill">🤝 צוות אחד</span>
+    </div>
+  </div>
+</header>
+
+<nav class="jump" id="jump" aria-label="ניווט מהיר"></nav>
+
+<main id="content"></main>
+
+<footer>
+  <div class="walk" aria-hidden="true">🐧🐧🐧🐧</div>
+  <p>הפינגוינים — הולכים ביחד, בונים ביחד, מנצחים ביחד!</p>
+</footer>
+
+<script>
+/* =====================================================================
+   PORTAL CONTENT — edit ONLY this block to add / remove / change links.
+   Source of truth mirrors readme.md in this folder (see CLAUDE.md).
+
+   Each section:  { id, title, desc, icon, color, links: [...] }
+   Each link:     { title, url, emoji, type }
+   type ∈ "video" | "pdf" | "tool" | "learn" | "page" | "image"
+   ===================================================================== */
+const SECTIONS = [
+  {
+    id: "robot",
+    title: "משחק הרובוט",
+    desc: "הזירה, המשימות, הבנייה והניקוד",
+    icon: "🤖",
+    color: "var(--robot)",
+    links: [
+      { title: "סידור הזירה",        url: "https://www.youtube.com/watch?v=BYrrR3-Qcdk", emoji: "🗺️", type: "video" },
+      { title: "משימות הרובוט",      url: "https://www.youtube.com/watch?v=2J_yiy8yjHw", emoji: "🎯", type: "video" },
+      { title: "מדריך משימות זירה",  url: "https://firstisrael.org.il/files/fll-challenge/p9kSUoVuYfUPu5/hebrew_founders_rgr.pdf", emoji: "📘", type: "pdf" },
+      { title: "הוראות בנייה",       url: "https://firstisrael.org.il/fll/challenge/building-instructions", emoji: "🧱", type: "page" },
+      { title: "מפת תכנון",          url: "https://firstisrael.org.il/files/fll-challenge/99q19SRJo49fcN/fll-challenge-bioglow-wireframe-grid.pdf", emoji: "📐", type: "pdf" },
+      { title: "מחשבון שיפוט",       url: "https://fll-events.firstisrael.org.il/tools/scorer", emoji: "🧮", type: "tool" },
+      { title: "דף ניקוד",           url: "https://firstisrael.org.il/files/fll-challenge/PjLFvNGwDqoISj/hebrew_founders_scoresheet.pdf", emoji: "🏅", type: "pdf" }
+    ]
+  },
+  {
+    id: "project",
+    title: "פרויקט החדשנות",
+    desc: "חוקרים, מגלים וממציאים",
+    icon: "💡",
+    color: "var(--project)",
+    links: [
+      { title: "תיאור פרויקט החדשנות",               url: "https://robfll.github.io/_images/image49.png", emoji: "📝", type: "image" },
+      { title: "לומדה: מגוון ביולוגי — עשרה עולמות", url: "https://robfll.github.io/2027/challenge/topic/prep/bioglow-examples.html", emoji: "🌍", type: "learn" },
+      { title: "לומדה: תהליך חקר — מסע ביער הגשם",  url: "https://robfll.github.io/2027/challenge/topic/prep/bioglow-rainforest-he.html", emoji: "🌴", type: "learn" },
+      { title: "דף שיפוט",                           url: "https://firstisrael.org.il/files/fll-challenge/qj8qf6FvjGEu7u/unearthed-judging-rubrics.pdf", emoji: "📋", type: "pdf" }
+    ]
+  },
+  {
+    id: "core",
+    title: "ערכי ליבה",
+    desc: "איך אנחנו עובדים יחד כקבוצה",
+    icon: "💜",
+    color: "var(--core)",
+    links: [
+      { title: "ערכים", url: "https://robfll.github.io/2027/challenge/core/readme.html", emoji: "🤝", type: "page" },
+      { title: "פרסים", url: "https://firstisrael.org.il/files/fll-challenge/vyL0902zLTIf5O/unearthed-award-list.pdf", emoji: "🏆", type: "pdf" }
+    ]
+  }
+];
+
+/* Labels shown on each card for the link type */
+const TYPE_LABELS = {
+  video: "▶ סרטון",
+  pdf:   "📄 מסמך",
+  tool:  "🛠 כלי",
+  learn: "🎮 לומדה",
+  page:  "🌐 אתר",
+  image: "🖼 תמונה"
+};
+
+/* ---------------- rendering (no need to edit below) ---------------- */
+(function render() {
+  const main = document.getElementById("content");
+  const nav = document.getElementById("jump");
+  const esc = s => String(s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+
+  SECTIONS.forEach(sec => {
+    nav.insertAdjacentHTML("beforeend",
+      `<a href="#${esc(sec.id)}" style="background:${sec.color}">${sec.icon} ${esc(sec.title)}</a>`);
+
+    const cards = sec.links.map(l => `
+      <a class="card" href="${esc(l.url)}" target="_blank" rel="noopener" style="--accent:${sec.color}">
+        <span class="card-emoji" aria-hidden="true">${l.emoji || "🔗"}</span>
+        <span class="card-text">
+          <span class="card-title">${esc(l.title)}</span>
+          ${TYPE_LABELS[l.type] ? `<span class="tag">${TYPE_LABELS[l.type]}</span>` : ""}
+        </span>
+      </a>`).join("");
+
+    main.insertAdjacentHTML("beforeend", `
+      <section id="${esc(sec.id)}">
+        <div class="section-head">
+          <div class="section-icon" style="background:${sec.color}" aria-hidden="true">${sec.icon}</div>
+          <div>
+            <h2>${esc(sec.title)}</h2>
+            ${sec.desc ? `<p class="section-desc">${esc(sec.desc)}</p>` : ""}
+          </div>
+        </div>
+        <div class="grid">${cards}</div>
+      </section>`);
+  });
+
+  // falling snowflakes in the header
+  const flakes = document.querySelector(".flakes");
+  for (let i = 0; i < 14; i++) {
+    const f = document.createElement("span");
+    f.textContent = "❄";
+    f.style.left = Math.random() * 100 + "%";
+    f.style.animationDuration = 5 + Math.random() * 6 + "s";
+    f.style.animationDelay = -Math.random() * 8 + "s";
+    f.style.fontSize = 10 + Math.random() * 12 + "px";
+    flakes.appendChild(f);
+  }
+})();
+</script>
+</body>
+</html>

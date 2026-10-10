@@ -10,4 +10,5 @@
 * [ערכים](./core/readme.md) - fll core values
 
 ## materails
+* [child portal page](./childPortal/index.html) | [online web link](https://robfll.github.io/2027/challenge/childPortal/index.html)
 * [drive link for approved users](https://drive.google.com/drive/folders/160T063TidnnnlfcFjgktWdtFpcqueyOI?usp=drive_link)
